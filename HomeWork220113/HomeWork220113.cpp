@@ -8,14 +8,14 @@ void StringTrimRemove(const char* _Left, char* _Right)
     // for while if switch
     // "aaabbbcccddd";
 
-    int j = 0;
+    int Index = 0;
     for (int i = 0; 0 != _Left[i]; i++)
     {
         char empty = _Left[i];
         if (empty != ' ')
         {
-            _Right[j] = _Left[i];
-            j++;
+            _Right[Index] = _Left[i];
+            Index++;
         }
     }
     return;
